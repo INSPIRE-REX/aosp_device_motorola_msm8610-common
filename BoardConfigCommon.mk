@@ -108,6 +108,9 @@ TARGET_NOT_USE_GZIP_RECOVERY_RAMDISK := true
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
 
+#Text Relocation
+TARGET_NEEDS_TEXT_RELOCATIONS := true
+
 # Storage & partiiton
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
